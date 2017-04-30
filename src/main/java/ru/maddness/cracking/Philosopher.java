@@ -1,9 +1,9 @@
-package ru.maddness;
+package ru.maddness.cracking;
 
 /**
  * @author aostrikov
- *
- * Non-locking, but may be not optimal
+ *         <p>
+ *         15.3 Non-locking, but may be not optimal
  */
 public class Philosopher extends Thread {
 
@@ -54,6 +54,7 @@ public class Philosopher extends Thread {
         p2.start();
         p3.start();
     }
-}
 
-class Fork {}
+    private static class Fork {
+    }
+}
